@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #D9B99B;
+    padding: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+
+
+label {
+    padding: 0px 0px 2px;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    max-width: 900px;
+    flex-direction: column;
+    box-shadow: 1px 0px 4px 2px rgba(0,0,0,0.75);
+    border: 3px solid black;
+    border-radius: 5px;
+    padding: 16px 20px;
+    margin: 20px auto;
+    /* align-items: center; */
+}
+
+form #bookFormTitle, #bookFormAuthor, #bookFormYear{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0px;
+    margin: 8px 0px;
+}
+
+label[for=bookFormIsComplete], #bookFormIsComplete {
+    display: inline-flex;
+}
+
+
+
+#bookFormTitle, #bookFormAuthor, #bookFormYear{
+    width: 100%;
+    height: 2.5em;
+}
+
+#searchBook {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#searchBookTitle {
+    width: 70%;
+}
+
+#searchBook > button {
+    width: 20%;
+}
+
+button {
+    color: white;
+    background-color: #D9B99B;
+    font-weight: bolder;
+    border: 0;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #C3A68B;
+}
+
+
+
+#bookFormSubmit {
+    margin: 10px 0px 3px;
+    width: 100%;
+}
+
+#incompleteBookList > #bookItem{
+    display: flex;
+    flex-direction: row;
+}
